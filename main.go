@@ -2,6 +2,7 @@ package main // import "gangleri.io/pkg/canonical-gen"
 
 import (
 	"flag"
+	"fmt"
 	"os"
 	"strings"
 	"text/template"
@@ -34,7 +35,11 @@ func main() {
 	}
 
 	if *repo == "" {
-		repoRoot, _ := vcs.RepoRootForImportPath(*pkg, false)
+		repoRoot, err := vcs.RepoRootForImportPath(*pkg, false)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "Unable to obtain Repository URL, try specifying it with the -url flag")
+			os.Exit(1)
+		}
 		*repo = repoRoot.Repo
 	}
 
