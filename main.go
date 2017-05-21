@@ -1,4 +1,4 @@
-package main
+package main // import "gangleri.io/pkg/canonical-gen"
 
 import (
 	"flag"
