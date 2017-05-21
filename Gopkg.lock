@@ -1,0 +1,7 @@
+memo = "5fe270d00830aa7966107e6e75f53d1ab1333dcdd3b279440d8db58f9f7bd1a8"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/tools"
+  packages = ["go/vcs"]
+  revision = "81478017b604f98ba7a7300ddf703b12b119c49c"
