@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"os"
-	"text/template"
 	"strings"
+	"text/template"
 
 	"golang.org/x/tools/go/vcs"
 )
@@ -24,8 +24,8 @@ var html string = `<html>
 
 func main() {
 	pkg := flag.String("pkg", "", "Package name")
-	repo := flag.String("repoUrl", "", "repository url")
-	repoType := flag.String("repoType", "git", "repository type, git is the default")
+	repo := flag.String("url", "", "repository url")
+	repoType := flag.String("type", "git", "repository type, git is the default")
 	flag.Parse()
 
 	if *pkg == "" {
