@@ -4,7 +4,7 @@ See [go doc][1] for details of canonical import paths and go packages.
 
 Install:
 ```sh
-go get gangleri.io/pkg/canonical-gen
+go get -u gangleri.io/pkg/canonical-gen
 ```
 
 Usage:
@@ -21,10 +21,10 @@ The default behavior is to get the package import path and the repository
 URL from the root directory of the package code. However, you can change 
 this using the following arguments:
 
-|flag|description|
-| :--- | :--- |
+|Flag|Description|
+| --- | --- |
 **-pkg**            |The package import name
-**-url**        |The repository URL 
+**-repo**        |The repository URL 
 **-type**       |The repository type, defaults to *git*
 
 [1]: https://golang.org/doc/go1.4#canonicalimports
