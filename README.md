@@ -1,6 +1,7 @@
 # canonical-gen
 [![Build Status](https://travis-ci.org/gangleri/canonical-gen.svg?branch=master)](https://travis-ci.org/gangleri/canonical-gen)
 [![Report card](https://goreportcard.com/badge/gangleri.io/pkg/canonical-gen)](https://goreportcard.com/report/gangleri.io/pkg/canonical-gen)
+[![codecov](https://codecov.io/gh/gangleri/canonical-gen/branch/master/graph/badge.svg)](https://codecov.io/gh/gangleri/canonical-gen)
 
 Generate html for use with canonical import paths of Go packages.
 See [go doc][1] for details of canonical import paths and go packages.
